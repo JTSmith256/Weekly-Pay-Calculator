@@ -50,19 +50,3 @@ Even though I am fairly satisfied with the program as it is, there's no reason n
 1. I intend to prevent the failure of the program on the second question by simply restating the question to require a different answer. "How many hours of overtime do you have?" will logically prompt a numeric response from the user, avoiding the error and failure when text is entered instead.
 2. I believe I could make the entire program more attractive and appealing to the user by broadening it's purpose and use. Rather than simply calculating the employee's pay for a week, it may be wiser to allow the user to select and customize the pay period they want to calculate, such as including options for weekly, biweekly, monthly, or annual pay.
 3. I also believe I can make the program more accurate and realistic by including an option for the employee's tax deduction per paycheck. This should allow the program to work with far more realistic numbers and allow the user far more confidence in the results.
-
-
-# Coding:
-
-Below I have shown the lines of coding used for the program for further review and critique.
-
-[Defining Variables]
-Wage = float(input("What is your Hourly Wage?"))
-Hours = int(input("Regularly, how many Hours do you receive in a week?"))
-Overtime = float(input("Do you have any Overtime Hours?"))
-Pay = float(Wage * Hours)
-Overpay = float(Overtime * (Wage * 1.5))
-Total = (round(Overpay + Pay, 2))
-
-[Having the program print the summary]
-print ("Your weekly pay is: $", Total)
