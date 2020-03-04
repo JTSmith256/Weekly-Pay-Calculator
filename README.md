@@ -1,11 +1,11 @@
 # Weekly-Pay-Calculator
 
-Description:
+# Description:
 
 The Weekly Pay Calculator is a simplistic program written in Python language, used for determining an employee's average weekly pay. The use of this programs allows average people to simply enter the numbers they know and come up with a rough figure for their pay without having to inquire with their organization or scour their previous paychecks.
 
 
-Instructions:
+# Instructions:
 
 To use the Weekly Pay Calculator, you will require three pieces of key information:
 
@@ -38,12 +38,12 @@ Once all three pieces of information have been entered, the program will use the
 This summary will provide the user with the exact amount of pay that the employee should receive every week. If the user wishes to use the program again, or experiment with different variables, simply restart the program, and the first message will appear again.
 
 
-Errors or Bugs:
+# Errors or Bugs:
 
 As of current, there are little to no errors that have been encountered with this program that would prevent it's effective use. However, the one error that has been encountered is when a use attempts to input a 'string' variable for the secondary message. Upon attempting this the program will encounter an error and fail.
 
 
-Fixes and Updates:
+# Fixes and Updates:
 
 Even though I am fairly satisfied with the program as it is, there's no reason not to improve upon it's design. Below are a list of future improvements I intend to make as the project progresses forward:
 
@@ -52,11 +52,11 @@ Even though I am fairly satisfied with the program as it is, there's no reason n
 3. I also believe I can make the program more accurate and realistic by including an option for the employee's tax deduction per paycheck. This should allow the program to work with far more realistic numbers and allow the user far more confidence in the results.
 
 
-Coding:
+# Coding:
 
 Below I have shown the lines of coding used for the program for further review and critique.
 
-# Define our variables
+[Defining Variables]
 Wage = float(input("What is your Hourly Wage?"))
 Hours = int(input("Regularly, how many Hours do you receive in a week?"))
 Overtime = float(input("Do you have any Overtime Hours?"))
@@ -64,5 +64,5 @@ Pay = float(Wage * Hours)
 Overpay = float(Overtime * (Wage * 1.5))
 Total = (round(Overpay + Pay, 2))
 
-# Have program print total as employee's weekly pay
+[Having the program print the summary]
 print ("Your weekly pay is: $", Total)
